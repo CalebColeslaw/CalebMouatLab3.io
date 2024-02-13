@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Caleb Mouat Lab 3 Assignment</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            body{
+                background-color: black;
+            }
+            <!--Class so I can format how each container for the images is-->
+            .image_content{
+                overflow: hidden;
+                height: 50px;
+                text-align: center;
+            }
+            .image_content img{
+                height: 100%;
+                width: auto;
+                transition: transform 0.2s ease ;
+            }
+            .image_content:hover img{
+                transform: scale(1.2);
+            }
+            .btn-underline {
+                text-decoration: underline;
+            }
+
+            .align-right {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid"> <!--Contains the website elements-->
+            <!--Image Row [1]-->
+            <div class="row" style="margin: 25px;">
+                <div class="col-3 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#1Modal">
+                        <img class="img-fluid" src="UI1.jpg" alt="UI1">
+                    </a>
+                </div>
+                <div class="col-4 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#4Modal">
+                        <img class="img-fluid" src="UI4.jpg" alt="UI4">
+                    </a>
+                </div>
+                <div class="col-3 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#3Modal">
+                        <img class="img-fluid" src="UI3.jpg" alt="UI3">
+                    </a>
+                </div>
+                <div class="col-2 align-right">
+                    <h2 style="color: white">
+                        Caleb Mouat Lab 3
+                    </h2>
+                    <a href="index.html" class="btn btn-primary btn-underline btn-lg">Home</a><br>
+                    <a href="photo.html" class="btn btn-secondary btn-lg">Photos</a><br>
+                    <a href="bio.html" class="btn btn-secondary btn-lg">Bio</a><br>
+                    <a href="blog.html" class="btn btn-secondary btn-lg">Blog</a><br>
+                    <a href="contact.html" class="btn btn-secondary btn-lg">Contact</a><br>
+                </div>
+            </div>
+            <!--Image Row [2]-->
+            <div class="row" style="margin: 25px;">
+                <div class="col-5 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#2Modal">
+                        <img class="img-fluid" src="UI2.jpg" alt="UI2">
+                    </a>
+                </div>
+                <div class="col-5 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#5Modal">
+                        <img class="img-fluid" src="UI5.jpg" alt="UI5">
+                    </a>
+                </div>
+            </div>
+            <!--Image Row [3]-->
+            <div class="row" style="margin: 25px;">
+                <div class="col-6 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#6Modal">
+                        <img class="img-fluid" src="UI6.jpg" alt="UI6">
+                    </a>
+                </div>
+                <div class="col-4 image_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#8Modal">
+                        <img class="img-fluid" src="UI8.jpg" alt="UI8">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <!--1-->
+        <div class="modal fade" id="1Modal" tabindex="-1" aria-labelledby="1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="1Modal">UIDAHO Image 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Picture of the front of the University of Idaho</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--2-->
+        <div class="modal fade" id="2Modal" tabindex="-1" aria-labelledby="2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="2Modal">UIDAHO Image 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Admin Building at sunset</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--3-->
+        <div class="modal fade" id="3Modal" tabindex="-1" aria-labelledby="3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="3Modal">UIDAHO Image 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Admin Building in snow</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--4-->
+        <div class="modal fade" id="4Modal" tabindex="-1" aria-labelledby="4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="4Modal">UIDAHO Image 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Aerial shot of the Admin Building</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--5-->
+        <div class="modal fade" id="5Modal" tabindex="-1" aria-labelledby="5ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="5Modal">UIDAHO Image 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Courtyard of the Library</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--6-->
+        <div class="modal fade" id="6Modal" tabindex="-1" aria-labelledby="6ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="6Modal">UIDAHO Image 6</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>College of Buisness</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--7-->
+        <div class="modal fade" id="7Modal" tabindex="-1" aria-labelledby="7ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="7Modal">UIDAHO Image 7</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Football Field</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--8-->
+        <div class="modal fade" id="8Modal" tabindex="-1" aria-labelledby="8ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="8Modal">UIDAHO Image 8</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Water Tower</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
